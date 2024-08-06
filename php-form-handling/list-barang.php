@@ -1,11 +1,15 @@
 <?php
 include_once './koneksi.php';
 
+session_start();
+echo $_SESSION['name'];
+
 $sql = <<<SQL
     SELECT * FROM barang
 SQL;
 
 $result = $conn->query($sql);
+$result->num_rows
 
 ?>
 

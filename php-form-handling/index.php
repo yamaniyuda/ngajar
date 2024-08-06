@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+$_SESSION['name'] = 'budi';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
